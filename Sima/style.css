@@ -1,0 +1,260 @@
+@import url("https://use.typekit.net/qcx0mvz.css");
+@import url("https://use.typekit.net/mmi6tgk.css");
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: "albertan-pro", sans-serif;
+}
+
+.menu {
+    display: flex;
+    height: 110px;
+    align-items: center;
+    margin: 20px 100px 0 145px;
+}
+
+.logo {
+    flex: 1;
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.navMenu {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: 45px;
+}
+
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-size: 200% 200%;
+    background: linear-gradient(90deg, rgba(170, 0, 52, 1) 0%, rgba(23, 0, 148, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+}
+
+.navMenu a:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 80px;
+    height: 400px;
+    gap: 75px;
+}
+
+.portfolio h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 3.8em;
+
+}
+
+.portfolio h2 {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 3.6em;
+}
+
+.sima {
+    height: 100%;
+}
+
+.sima img {
+    height: 100%;
+}
+
+.space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.circles {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.outside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(170, 0, 52, 1) 0%, rgba(23, 0, 148, 1) 100%);
+}
+
+.inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.inside a {
+    color: white;
+    font-size: 2em;
+    font-family: "minion-pro-caption", serif;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.tlacoviny {
+    display: flex;
+    justify-content: center;
+}
+
+.tlacoviny h1 {
+    color: white;
+    font-size: 2.5em;
+    font-family: "minion-pro-caption", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.devicer {
+    width: 100em;
+    display: block;
+    height: 3px;
+    margin-top: 13px;
+    background: linear-gradient(90deg, rgba(170, 0, 52, 1) 0%, rgba(23, 0, 148, 1) 100%);
+}
+
+.pictures {
+    display: flex;
+    gap: 80px;
+}
+
+.rectangles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 299px;
+    height: 421px;
+    background: white;
+}
+
+.rectangles2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 630px;
+    height: 297.5px;
+    background: white;
+}
+
+.rectangles3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 421px;
+    height: 299px;
+    background: white;
+}
+
+.rectangles2 img {
+    width: 621px;
+    height: 288.5px;
+}
+
+.rectangles img {
+    width: 290px;
+    height: 412px;
+}
+
+.rectangles3 img {
+    width: 412px;
+    height: 290px;
+}
+
+.text {
+    font-family: "minion-pro-caption", serif;
+    max-width: 1200px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text h1 {
+    color: #aa0034;
+}
+
+.text p {
+    color: white;
+    font-size: 1.6em;
+    text-align: justify;
+    text-align-last: justify
+}
+
+.text h2 {
+    color: white;
+
+}
+
+.adobe {
+    display: flex;
+    gap: 20px;
+}
+
+.adobe img {
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+/* background: linear-gradient(to right, red, purple); */
