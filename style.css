@@ -214,6 +214,15 @@ body {
     background: white;
 }
 
+.rectangles5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 818px;
+    background: white;
+}
+
 .rectangles2 img {
     width: 621px;
     height: 288.5px;
@@ -232,6 +241,11 @@ body {
 .rectangles4 img {
     width: 1239px;
     height: 246.5px;
+}
+
+.rectangles5 img {
+    width: 351px;
+    height: 809px;
 }
 
 .text {
