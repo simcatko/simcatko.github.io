@@ -223,14 +223,32 @@ body {
     background: white;
 }
 
-.rectangles2 img {
-    width: 621px;
-    height: 288.5px;
+.rectangles6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 809px;
+    height: 809px;
+    background: white;
+}
+
+.rectangles7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 545px;
+    height: 283px;
+    background: white;
 }
 
 .rectangles img {
     width: 290px;
     height: 412px;
+}
+
+.rectangles2 img {
+    width: 621px;
+    height: 288.5px;
 }
 
 .rectangles3 img {
@@ -246,6 +264,16 @@ body {
 .rectangles5 img {
     width: 351px;
     height: 809px;
+}
+
+.rectangles6 img {
+    width: 800px;
+    height: 800px;
+}
+
+.rectangles7 img {
+    width: 536px;
+    height: 274px;
 }
 
 .text {
