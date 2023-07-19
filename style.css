@@ -148,6 +148,20 @@ body {
     justify-content: center;
 }
 
+.socsiete {
+    display: flex;
+    justify-content: center;
+}
+
+.socsiete h1 {
+    color: white;
+    font-size: 2.5em;
+    font-family: "minion-pro-caption", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
 .tlacoviny h1 {
     color: white;
     font-size: 2.5em;
@@ -241,6 +255,15 @@ body {
     background: white;
 }
 
+.rectangles8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 427px;
+    height: 167px;
+    background: white;
+}
+
 .rectangles img {
     width: 290px;
     height: 412px;
@@ -274,6 +297,39 @@ body {
 .rectangles7 img {
     width: 536px;
     height: 274px;
+}
+
+.rectangles8 img {
+    width: 418px;
+    height: 158px;
+}
+
+.rectanglessoc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 598px;
+    height: 340px;
+    background: white;
+}
+
+.rectanglessoc2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 340px;
+    background: white;
+}
+
+.rectanglessoc img {
+    width: 589px;
+    height: 331px;
+}
+
+.rectanglessoc2 img {
+    width: 331px;
+    height: 331px;
 }
 
 .text {
