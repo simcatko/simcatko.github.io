@@ -264,6 +264,24 @@ body {
     background: white;
 }
 
+.rectangles9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 633px;
+    height: 340px;
+    background: white;
+}
+
+.rectangles10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 875px;
+    height: 290px;
+    background: white;
+}
+
 .rectangles img {
     width: 290px;
     height: 412px;
@@ -302,6 +320,16 @@ body {
 .rectangles8 img {
     width: 418px;
     height: 158px;
+}
+
+.rectangles9 img {
+    width: 624px;
+    height: 331px;
+}
+
+.rectangles10 img {
+    width: 866px;
+    height: 281px;
 }
 
 .rectanglessoc {
@@ -358,6 +386,20 @@ body {
 .rectanglestsh2 img {
     width: 588px;
     height: 412px;
+}
+
+.ine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 536px;
+    height: 503px;
+    background: white;
+}
+
+.ine img {
+    width: 527px;
+    height: 494px;
 }
 
 .text {
