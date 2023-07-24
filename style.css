@@ -54,12 +54,43 @@ body {
     background: linear-gradient(90deg, rgba(170, 0, 52, 1) 0%, rgba(23, 0, 148, 1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
+}
 
-
+.navMenu2 a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-size: 200% 200%;
+    background: linear-gradient(90deg, rgba(170, 0, 52, 1) 0%, rgba(23, 0, 148, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .navMenu a:hover {
     color: rgba(0, 0, 0, 0);
+}
+
+.navMenu2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(38, 38, 38, 0.85);
+    width: 100%;
+    position: fixed;
+    left: -100%;
+    gap: 30px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transition: 750ms;
+}
+
+.navMenu2.active {
+    left: 0;
 }
 
 .portfolio {
@@ -181,229 +212,165 @@ body {
 
 .devicer {
     display: flex;
-    width: 100em;
+    width: 90%;
     display: block;
     height: 3px;
     margin-top: 13px;
     background: linear-gradient(90deg, rgba(170, 0, 52, 1) 0%, rgba(23, 0, 148, 1) 100%);
 }
 
-.pictures {
-    display: flex;
-    gap: 80px;
-    width: 1500px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .rectangles {
     display: flex;
+    max-width: 1400px;
+    margin-left: 30px;
+    margin-right: 30px;
     align-items: center;
     justify-content: center;
-    width: 299px;
-    height: 421px;
-    background: white;
+    flex-wrap: wrap;
+    gap: 80px;
 }
 
-.rectangles2 {
+.rectanglestricko {
+    display: flex;
+    max-width: 1500px;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.format1 {
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    border: 5px solid white;
+}
+
+.format2 {
+    width: 100%;
+    max-width: 621px;
+    height: auto;
+    border: 5px solid white;
+}
+
+.format3 {
+    width: 100%;
+    max-width: 412px;
+    height: auto;
+    border: 5px solid white;
+}
+
+.format4 {
+    width: 100%;
+    max-width: 1239px;
+    height: auto;
+    border: 5px solid white;
+}
+
+.format5 {
+    width: 100%;
+    max-width: 351px;
+    height: auto;
+    border: 5px solid white;
+}
+
+.format6 {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 5px solid white;
+}
+
+.format7 {
+    width: 100%;
+    max-width: 536px;
+    height: auto;
+    border: 5px solid white;
+}
+
+.format8 {
+    width: 100%;
+    max-width: 418px;
+    height: auto;
+    border: 5px solid white;
+}
+
+.format9 {
+    width: 100%;
+    max-width: 624px;
+    height: auto;
+    border: 5px solid white;
+}
+
+.format10 {
+    width: 100%;
+    max-width: 866px;
+    height: auto;
+    border: 5px solid white;
+}
+
+.format11 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 630px;
-    height: 297.5px;
-    background: white;
+    width: 100%;
+    max-width: 589px;
+    height: auto;
+    border: 5px solid white;
+
 }
 
-.rectangles3 {
+.format12 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 421px;
-    height: 299px;
-    background: white;
+    width: 100%;
+    max-width: 331px;
+    height: auto;
+    border: 5px solid white;
 }
 
-.rectangles4 {
+.format13 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1248px;
-    height: 255.5px;
-    background: white;
+    border: 5px solid white;
+    width: 100%;
+    max-width: 699px;
+    height: auto;
 }
 
-.rectangles5 {
+.format14 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 360px;
-    height: 818px;
-    background: white;
+    width: 100%;
+    max-width: 588px;
+    height: auto;
+    border: 5px solid white;
 }
 
-.rectangles6 {
+.format15 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 809px;
-    height: 809px;
-    background: white;
+    width: 100%;
+    max-width: 527px;
+    height: auto;
+    border: 5px solid white;
 }
 
-.rectangles7 {
+.adobe {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 545px;
-    height: 283px;
-    background: white;
+    gap: 20px;
 }
 
-.rectangles8 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 427px;
-    height: 167px;
-    background: white;
-}
-
-.rectangles9 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 633px;
-    height: 340px;
-    background: white;
-}
-
-.rectangles10 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 875px;
-    height: 290px;
-    background: white;
-}
-
-.rectangles img {
-    width: 290px;
-    height: 412px;
-}
-
-.rectangles2 img {
-    width: 621px;
-    height: 288.5px;
-}
-
-.rectangles3 img {
-    width: 412px;
-    height: 290px;
-}
-
-.rectangles4 img {
-    width: 1239px;
-    height: 246.5px;
-}
-
-.rectangles5 img {
-    width: 351px;
-    height: 809px;
-}
-
-.rectangles6 img {
-    width: 800px;
-    height: 800px;
-}
-
-.rectangles7 img {
-    width: 536px;
-    height: 274px;
-}
-
-.rectangles8 img {
-    width: 418px;
-    height: 158px;
-}
-
-.rectangles9 img {
-    width: 624px;
-    height: 331px;
-}
-
-.rectangles10 img {
-    width: 866px;
-    height: 281px;
-}
-
-.rectanglessoc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 598px;
-    height: 340px;
-    background: white;
-}
-
-.rectanglessoc2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 340px;
-    height: 340px;
-    background: white;
-}
-
-.rectanglessoc img {
-    width: 589px;
-    height: 331px;
-}
-
-.rectanglessoc2 img {
-    width: 331px;
-    height: 331px;
-}
-
-.rectanglestsh {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 708px;
-    height: 505px;
-    background: white;
-}
-
-.rectanglestsh img {
-    width: 699px;
-    height: 494px;
-}
-
-.rectanglestsh2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 597px;
-    height: 421px;
-    background: white;
-}
-
-.rectanglestsh2 img {
-    width: 588px;
-    height: 412px;
-}
-
-.ine {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 536px;
-    height: 503px;
-    background: white;
-}
-
-.ine img {
-    width: 527px;
-    height: 494px;
+.adobe img {
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
 }
 
 .text {
@@ -424,7 +391,7 @@ body {
     color: white;
     font-size: 1.6em;
     text-align: justify;
-    text-align-last: justify
+    /* text-align-last: justify */
 }
 
 .text h2 {
@@ -432,23 +399,34 @@ body {
 
 }
 
-.adobe {
-    display: flex;
-    gap: 20px;
+.hamburger {
+    cursor: pointer;
+    display: none;
 }
 
-.adobe img {
-    margin-top: 20px;
-    width: 70px;
-    height: 70px;
+.bar {
+    display: block;
+    background-color: #fff;
+    width: 24px;
+    /* The following 2 properties are essential in creating the "X" when the hamburger is clicked. If you change just 1 of the 2, then you need to find the proper combination for the other one */
+    height: 2px;
+    margin: 6px auto;
+
+    /*    -webkit-transition: all 300ms ease;  */
+    transition: all 300ms ease-in-out;
 }
 
-@media (max-width: 1720px) {
-    .devicer {
-        width: 90em;
-    }
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0
 }
 
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
 
 @media (max-width: 1680px) {
     body {
@@ -464,23 +442,11 @@ body {
     }
 }
 
-@media (max-width: 1520px) {
-    .devicer {
-        width: 80em;
-    }
-
-    .pictures {
-        width: 1400px;
-    }
-}
+@media (max-width: 1520px) {}
 
 @media (max-width: 1380px) {
     .tlacoviny {
         margin-top: 50px;
-    }
-
-    .devicer {
-        width: 75em;
     }
 
     .text {
@@ -489,38 +455,26 @@ body {
     }
 }
 
-@media (max-width: 1260px) {
-    .devicer {
-        width: 70em;
-    }
-
-    .pictures {
-        width: 1250px;
-    }
-
-    .rectangles4 {
-        width: 873px;
-        height: 181px;
-    }
-
-    .rectangles4 img {
-        width: 863px;
-        height: 172px;
-    }
-}
 
 @media (max-width: 1170px) {
 
-    .devicer {
-        width: 60em;
-    }
-
-    .pictures {
-        width: 1100px;
-    }
 
     .content {
         flex-wrap: wrap;
         align-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .navMenu2 {
+        display: flex;
     }
 }
