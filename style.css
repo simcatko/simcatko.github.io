@@ -20,13 +20,17 @@ body {
 
 .menu {
     display: flex;
-    height: 110px;
+    height: 175px;
     align-items: center;
-    margin: 20px 100px 0 145px;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1800px;
+
 }
 
 .logo {
-    flex: 1;
     height: 100%;
 }
 
@@ -35,7 +39,6 @@ body {
 }
 
 .navMenu {
-    flex: 2;
     display: flex;
     justify-content: flex-end;
     gap: 45px;
@@ -118,12 +121,9 @@ body {
     text-align: center;
 }
 
-.sima {
-    height: 100%;
-}
-
 .sima img {
-    height: 100%;
+    width: 100%;
+    max-width: 400px;
 }
 
 .space {
@@ -142,7 +142,7 @@ body {
 }
 
 .container {
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
 }
@@ -179,20 +179,7 @@ body {
 .tlacoviny {
     display: flex;
     justify-content: center;
-}
-
-.socsiete {
-    display: flex;
-    justify-content: center;
-}
-
-.socsiete h1 {
-    color: white;
-    font-size: 2.5em;
-    font-family: "minion-pro-caption", serif;
-    font-weight: 700;
-    font-style: normal;
-    text-transform: uppercase;
+    text-align: center;
 }
 
 .tlacoviny h1 {
@@ -481,9 +468,9 @@ body {
     }
 }
 
-@media (max-width: 455px) {
+/* @media (max-width: 447px) {
 
     .menu {
         margin: 20px 55px 0 145px;
     }
-}
+} */
