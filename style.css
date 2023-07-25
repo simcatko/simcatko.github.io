@@ -480,3 +480,10 @@ body {
         margin-right: 30px;
     }
 }
+
+@media (max-width: 455px) {
+
+    .menu {
+        margin: 20px 55px 0 145px;
+    }
+}
