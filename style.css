@@ -107,6 +107,7 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     font-size: 3.8em;
+    text-align: center;
 
 }
 
@@ -114,6 +115,7 @@ body {
     font-weight: 600;
     font-style: italic;
     font-size: 3.6em;
+    text-align: center;
 }
 
 .sima {
@@ -385,6 +387,7 @@ body {
 
 .text h1 {
     color: #aa0034;
+    text-align: center;
 }
 
 .text p {
@@ -455,16 +458,6 @@ body {
     }
 }
 
-
-@media (max-width: 1170px) {
-
-
-    .content {
-        flex-wrap: wrap;
-        align-content: center;
-    }
-}
-
 @media (max-width: 1000px) {
     .hamburger {
         display: block;
@@ -476,5 +469,14 @@ body {
 
     .navMenu2 {
         display: flex;
+    }
+}
+
+@media (max-width: 510px) {
+
+
+    .portfolio {
+        margin-left: 30px;
+        margin-right: 30px;
     }
 }
