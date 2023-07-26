@@ -370,7 +370,7 @@ body {
 }
 
 .text {
-    font-family: 'Merriweather', serif;
+    /* font-family: 'Merriweather', serif; */
     max-width: 1200px;
     gap: 20px;
     display: flex;
@@ -380,6 +380,7 @@ body {
 }
 
 .text h1 {
+    font-family: 'Merriweather', serif;
     color: #aa0034;
     text-align: center;
     font-weight: 800;
@@ -387,7 +388,7 @@ body {
 }
 
 .text p {
-
+    font-family: "minion-pro-caption", serif;
     color: white;
     font-size: 1.6em;
     font-weight: 300;
