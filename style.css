@@ -400,6 +400,13 @@ body {
 
 }
 
+.cv {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+}
+
 .hamburger {
     cursor: pointer;
     display: none;
