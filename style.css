@@ -137,6 +137,7 @@ body {
     display: flex;
     flex-grow: 1;
     justify-content: center;
+    min-height: 800px;
     gap: 70px;
     align-items: center;
 }
