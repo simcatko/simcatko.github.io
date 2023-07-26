@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/qcx0mvz.css");
 @import url("https://use.typekit.net/mmi6tgk.css");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 
 html,
 body {
@@ -174,7 +175,7 @@ body {
 
 .inside a {
     color: white;
-    font-size: 2em;
+    font-size: 3em;
     font-family: "minion-pro-caption", serif;
     font-weight: 500;
     font-style: italic;
@@ -190,7 +191,7 @@ body {
 .tlacoviny h1 {
     color: white;
     font-size: 2.5em;
-    font-family: "minion-pro-caption", serif;
+    font-family: 'Merriweather', serif;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
@@ -368,7 +369,7 @@ body {
 }
 
 .text {
-    font-family: "minion-pro-caption", serif;
+    font-family: 'Merriweather', serif;
     max-width: 1200px;
     gap: 20px;
     display: flex;
@@ -380,13 +381,16 @@ body {
 .text h1 {
     color: #aa0034;
     text-align: center;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .text p {
+
     color: white;
     font-size: 1.6em;
+    font-weight: 300;
     text-align: justify;
-    /* text-align-last: justify */
 }
 
 .text h2 {
