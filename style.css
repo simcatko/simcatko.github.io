@@ -400,6 +400,41 @@ body {
 
 }
 
+.nwm {
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding-right: 70px;
+}
+
+.nwm a {
+    text-decoration: none;
+
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background: linear-gradient(90deg, rgba(170, 0, 52, 1) 0%, rgba(23, 0, 148, 1) 100%);
+}
+
+.english {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 45px;
+    height: 45px;
+    border-radius: 20%;
+}
+
 .cv {
     display: flex;
     justify-content: center;
@@ -483,6 +518,12 @@ body {
 
     .navMenu2 {
         display: flex;
+    }
+
+
+    .nwm {
+        padding: 0;
+        justify-content: center;
     }
 }
 
