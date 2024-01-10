@@ -358,6 +358,13 @@ body {
     border: 5px solid white;
 }
 
+.format16 {
+    height: 100%;
+    max-height: 331px;
+    width: auto;
+    border: 5px solid white;
+}
+
 .adobe {
     display: flex;
     gap: 20px;
