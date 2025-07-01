@@ -57,6 +57,21 @@
         })();
     </script>
 
+    <script>
+        function showPopup() {
+            if (window.Sleekplan && Sleekplan.show) {
+                Sleekplan.show('changelog'); // alebo 'popupId' ak máš platený plán a konkrétny popup
+            }
+        }
+        // Čakáme, kým sa widget načíta, potom spustíme opakovanie
+        window.addEventListener('load', () => {
+            // Prvé zobrazenie po načítaní stránky
+            showPopup();
+            // Opakovať každých 30 sekúnd
+            setInterval(showPopup, 30000);
+        });
+    </script>
+
     <footer>
         <div class="copyright"> ♥ 2023 Made with love by SiMa ♥ </div>
     </footer>
