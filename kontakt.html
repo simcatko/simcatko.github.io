@@ -56,69 +56,52 @@
             d.getElementsByTagName("head")[0].appendChild(s);
         })();
     </script>
+
+    <!-- <script>
+        function showPopup() {
+            if (window.Sleekplan && Sleekplan.show) {
+                Sleekplan.show('changelog'); // alebo 'popupId' ak máš platený plán a konkrétny popup
+            }
+        }
+        // Čakáme, kým sa widget načíta, potom spustíme opakovanie
+        window.addEventListener('load', () => {
+            // Prvé zobrazenie po načítaní stránky
+            showPopup();
+            // Opakovať každých 30 sekúnd
+            setInterval(showPopup, 30000);
+        });
+    </script> -->
+
     <style>
-        /* Štýly pre dolnú lištu */
-        #popup-bar {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #1E293B;
-            /* tmavomodrá */
-            color: white;
-            padding: 15px 20px;
-            font-family: sans-serif;
-            font-size: 16px;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
-            z-index: 9999;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #popup-bar button {
-            background: transparent;
-            color: white;
-            border: 1px solid white;
-            padding: 5px 10px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        #popup-bar a {
-            color: #93C5FD;
-            text-decoration: underline;
-            margin-left: 10px;
+        /* Počkame, kým sa widget načíta a upravíme jeho pozíciu */
+        .sp-widget {
+            bottom: 0 !important;
+            top: auto !important;
+            right: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
         }
     </style>
-    </head>
 
-    <body>
-        <!-- Dolná popup lišta -->
-        <div id="popup-bar">
-            <span>:loudspeaker: Nezabudni si pozrieť náš changelog! <a href="#">Zobraziť</a></span>
-            <button onclick="hidePopup()">Zavrieť</button>
-        </div>
-        <script>
-            function showPopup() {
-                const bar = document.getElementById('popup-bar');
-                bar.style.display = 'flex';
+    <script>
+        function showChangelog() {
+            if (window.Sleekplan && Sleekplan.show) {
+                Sleekplan.show('changelog');
             }
-            function hidePopup() {
-                const bar = document.getElementById('popup-bar');
-                bar.style.display = 'none';
-            }
-            // Zobrazí popup každých 30 sekúnd
-            window.addEventListener('load', () => {
-                showPopup(); // prvé zobrazenie hneď
-                setInterval(showPopup, 30000); // opakovanie každých 30 sekúnd
-            });
-        </script>
+        }
 
-        <footer>
-            <div class="copyright"> ♥ 2023 Made with love by SiMa ♥ </div>
-        </footer>
-    </body>
+        window.addEventListener('load', () => {
+            showChangelog();
+            setInterval(showChangelog, 30000);
+        });
+    </script>
+
+    <footer>
+        <div class="copyright"> ♥ 2023 Made with love by SiMa ♥ </div>
+    </footer>
+</body>
 
 </html>
