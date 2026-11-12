@@ -1,65 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simona Prokopova</title>
-    <link rel="stylesheet" href="./style.css?v=2">
+    <title>Simona Černáková | Grafické Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="menu">
-        <div class="logo">
-            <a href="./index.html"><img src="./Logo.svg" alt="SiMa"></a>
+
+    <header>
+        <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Tmavý režim</button>
+        <p class="subtitle">Grafické portfólio</p>
+        <h1>Simona Černáková</h1>
+        
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterGallery(event, 'all')">Všetko</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'tlac')">Tlačoviny</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'soc-siete')">Soc. siete</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'tricko')">Oblečenie</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'ine')">Logá a iné</button>
         </div>
-        <div class="nwm">
-            <a href="./indexe.html">
-                <div class="square">
-                    <div class="english">
-                        EN
+    </header>
+
+    <main>
+        <!-- Štvorce sa generujú zo súboru projects.js (hlavný obrázok = prvý v zozname) -->
+        <section class="gallery" id="gallery"></section>
+
+        <section class="cv-section">
+            <div class="cv-card">
+                <h3>Životopis</h3>
+                <div class="cv-grid">
+                    <div class="cv-item">
+                        <h4>Vzdelanie</h4>
+                        <p>Škola umeleckého priemyslu, odbor Grafický dizajn</p>
+                    </div>
+                    <div class="cv-item">
+                        <h4>Skúsenosti</h4>
+                        <p>Freelance grafika, stáže v kreatívnych štúdiách</p>
+                    </div>
+                    <div class="cv-item">
+                        <h4>Software</h4>
+                        <p>Adobe CC (Ps, Ai, Id), Figma, Procreate</p>
                     </div>
                 </div>
-            </a>
-        </div>
-        <nav class="navMenu">
-            <a href="./index.html">Domov</a>
-            <a href="./praca.html">Práca</a>
-            <a href="./cv.html">CV</a>
-            <a href="./kontakt.html">Kontakt</a>
-            <div class="dot"></div>
-        </nav>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+                <a href="#" class="btn-download">Stiahnuť PDF CV</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-gallery">
+                <div class="modal-viewer">
+                    <img id="modal-img" src="" alt="">
+                    <button class="modal-arrow prev" onclick="stepImage(-1)" aria-label="Predchádzajúci">&#8249;</button>
+                    <button class="modal-arrow next" onclick="stepImage(1)" aria-label="Ďalší">&#8250;</button>
+                    <span id="modal-counter" class="modal-counter"></span>
+                </div>
+                <div id="modal-thumbs" class="modal-thumbs"></div>
+            </div>
+            <div class="modal-text">
+                <p id="modal-client" class="modal-client"></p>
+                <h2 id="modal-title"></h2>
+                <p id="modal-year" class="modal-year"></p>
+                <p id="modal-programs" class="programs-tag"></p>
+                <p id="modal-desc"></p>
+            </div>
         </div>
     </div>
 
-    <nav class="navMenu2">
-        <a href="./index.html">Domov</a>
-        <a href="./praca.html">Práca</a>
-        <a href="./cv.html">CV</a>
-        <a href="./kontakt.html">Kontakt</a>
-    </nav>
-
-    <div class="portfolio">
-        <div class="space">
-            <h1>design portfolio</h1>
-            <h2>Simona Prokopová</h2>
-        </div>
-        <div class="sima">
-            <a href="./praca.html"><img src="./Sima-04.png" alt="Sima"></a>
-        </div>
-
-    </div>
-    <footer>
-        <div class="copyright"> ♥ 2024 Made with love by SiMa ♥ </div>
-    </footer>
+    <script src="projects.js"></script>
     <script src="script.js"></script>
-
 </body>
-
-
 </html>
