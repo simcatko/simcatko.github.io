@@ -51,6 +51,24 @@ const PROJECTS = [
     },
     {
         category: "tlac",
+        title: "Národná konferencia 2026",
+        client: "IAESTE Slovakia",
+        year: "2026",
+        tools: ["Photoshop", "Illustrator"],
+        desc: "Návrh dizajnu zberateľských kartičiek pre organizáciu IAESTE Slovakia na Národnú konferenciu 2026. Kartičky sú farebne odlíšené pre národné centrum, dozornú radu a lokálne centrá. Každá kartička má fotku, funkciu a vtipnú „superschopnosť“ danej osoby.",
+        images: [
+            ["tlac/nk26-nc1.webp", 815, 1111],
+            ["tlac/nk26-nc2.webp", 815, 1111],
+            ["tlac/nk26-nc3.webp", 815, 1111],
+            ["tlac/nk26-dr.webp", 815, 1111],
+            ["tlac/nk26-lc1.webp", 815, 1111],
+            ["tlac/nk26-lc2.webp", 815, 1111],
+            ["tlac/nk26-lc7.webp", 815, 1111],
+            ["tlac/nk26-zadna.webp", 815, 1111]
+        ]
+    },
+    {
+        category: "tlac",
         title: "Kalendár 2025 a etikety na flaše",
         client: "",
         year: "2024",
